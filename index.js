@@ -17,6 +17,7 @@ bot.on("message", function (message) {
     if(message.content === 'Clear') {
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Vous n'avez pas la permission d'executer cette commande");
     message.delete();
+    message.delete();
     }
 });
        

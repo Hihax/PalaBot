@@ -10,9 +10,10 @@ bot.on("ready", function() {
 });
 
 bot.on("message", function (message) { 
-    if(message.content === 'salut') {
+    if(message.content === 'Salut') {
     if(message.member.hasPermission("Admin")) return message.reply('Bonjour maître');
     message.reply('Bonjour')
-}});
+    }
+});
        
 bot.login(process.env.TOKEN);

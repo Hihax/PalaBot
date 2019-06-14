@@ -10,8 +10,8 @@ bot.on("ready", function() {
 });
 
 bot.on("message", function (message) { 
-    if(message.content === 'Salut') {
-    if(!message.member.hasPermission("Admin")) return message.reply('Bonjour maître');
+    if(message.content.toLocaleLowerCase === 'salut') {
+    if(message.member.hasPermission("Admin")) return message.reply('Bonjour maître');
     message.reply('Bonjour')
 }});
        

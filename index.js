@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 
+var PRE = "%";
+
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
@@ -7,4 +9,18 @@ bot.on("ready", function() {
     console.log("Bot connected");
 });
 
+bot.on("message", async function(message) {
+       if (message.author.equals(bot.user)) return;
+    
+       if(!message.content.startWith(PRE)) return;
+    
+       var args = message.content.substring(PRE.lenght).split(" ");
+    
+       switch(args[0], toLowerCase()) {
+           case "invite":
+           message.channel.send("Test");
+           break;
+    }
+});
+       
 bot.login(process.env.TOKEN);

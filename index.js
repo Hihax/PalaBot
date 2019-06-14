@@ -10,9 +10,9 @@ bot.on("ready", function() {
 });
 
 bot.on("message", function(message) { 
-    if(message.content === 'Salut') 
-    if(message.author.equals(Eban)) return message.reply('Bonjour maître')
+    if(message.content === 'Salut') {
+    if(message.author.equals("Eban")) return message.reply('Bonjour maître')
     message.reply('Bonjour')
-});
+}});
        
 bot.login(process.env.TOKEN);

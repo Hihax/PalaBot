@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-var PRE = "%";
+const PRE = "P!";
 
 var bot = new Discord.Client();
 
@@ -18,7 +18,7 @@ bot.on("message", async function(message) {
     
        switch(args[0], toLowerCase()) {
            case "invite":
-           message.channel.send("Test");
+           message.channel.send('Test');
            break;
     }
 });

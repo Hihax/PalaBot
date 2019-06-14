@@ -9,10 +9,10 @@ bot.on("ready", function() {
     console.log("Bot connected");
 });
 
-bot.on("message", function(message) { 
+bot.on("message", function (message) { 
     if(message.content === 'Salut') {
-    if(message.author.equals("@Eban")) return message.reply('Bonjour maître')
-    message.reply('Bonjour', message.author.name)
+    if(!message.member.hasPermission("Admin")) return message.reply('Bonjour maître');
+    message.reply('Bonjour')
 }});
        
 bot.login(process.env.TOKEN);

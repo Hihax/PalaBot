@@ -9,17 +9,9 @@ bot.on("ready", function() {
     console.log("Bot connected");
 });
 
-bot.on("message", async function(message) {
-       if (message.author.equals(bot.user)) return;
-    
-       if(!message.content.startWith(PRE)) return;
-    
-       var args = message.content.substring(PRE.lenght).split(" ");
-    
-       switch(args[0], toLowerCase()) {
-           case "invite":
-           message.channel.send('Test');
-           break;
+bot.on("message", function(message) {
+    if(message.content === 'Salut') {
+        message.reply('Bonjour')
     }
 });
        

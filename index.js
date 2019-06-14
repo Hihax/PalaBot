@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 const PRE = "P!";
-
+var n = 0;
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
@@ -16,8 +16,10 @@ bot.on("message", function (message) {
     }
     if(message.content === 'Clear') {
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Vous n'avez pas la permission d'executer cette commande");
-    message.delete();
-    message.delete();
+    while (n < 100) {
+        n++;
+        message.delete();
+      }
     }
 });
        

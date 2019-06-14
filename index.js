@@ -12,7 +12,7 @@ bot.on("ready", function() {
 bot.on("message", function(message) { 
     if(message.content === 'Salut') {
     if(message.author.equals("Eban")) return message.reply('Bonjour maître')
-    message.reply('Bonjour')
+    message.reply('Bonjour', message.author)
 }});
        
 bot.login(process.env.TOKEN);

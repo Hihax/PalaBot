@@ -31,14 +31,14 @@ bot.on("message", function (message) {
     message.reply(" ")
     var sender = message.content
     message.delete
-    logs.send("@everyone " sender "s'est connecté")
+    logs.send("@everyone ", sender, "s'est connecté")
     }
     
         if(message.content === 'P!deco') {
     message.reply(" ")
     var sender = message.content
     message.delete
-    logs.send("@everyone " sender "s'est déconnecté")
+    logs.send("@everyone ", sender, "s'est déconnecté")
     }
     
     if(message.content === 'P!help') {

@@ -18,7 +18,7 @@ bot.on("message", function (message) {
     message.reply("Voici l'URL : https://docs.google.com/spreadsheets/d/1dLyP47y2vrVqWxMgKBA6lpN1v18QJ4xgWOSpSHWj0KQ/edit#gid=1860824155")
     }
     if(message.content === 'P!mail') {
-    message.reply("Voici l'adresse mail : ZeAkatsuki@gmail.com")
+    message.reply("Voici l'adresse mail : zeakatsuki@gmail.com")
     }
     if(message.content === 'P!password') {
     message.reply("Voici le mot de passe du compte google : 5z*R9g97kW")

@@ -28,6 +28,8 @@ bot.on("message", function (message) {
     message.reply("**P!sheet** : affiche la liste des coordonnées du pala")
     message.reply("**P!mail** : affiche l'adresse email du compte google")
     message.reply("**P!password** : affiche le mot de passe du compte google")
+    message.reply("**P!co** : indique l'heure à la quelle vous vous êtes connecté")
+    message.reply("**P!deco** : indique l'heure à la quelle vous vous êtes déconnecté")
     }
 });
        

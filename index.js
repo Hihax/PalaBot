@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-
 const PRE = "P!";
 var n = 0;
 var bot = new Discord.Client();
@@ -9,7 +8,8 @@ bot.on("ready", function() {
     console.log("Bot connected");
 });
 
-bot.on("message", function (message) { 
+bot.on("message", function (message), member => {
+    const channel = member.guild.channels.find(ch => ch.name === 'member-log');
     if(message.content === 'Salut') {
     if(message.member.hasPermission("ADMINISTRATOR")) return message.reply('Bonjour maître');
     message.reply('Bonjour')

@@ -18,7 +18,8 @@ bot.on("message", function (message) {
     message.reply("Voici l'URL : https://docs.google.com/spreadsheets/d/1dLyP47y2vrVqWxMgKBA6lpN1v18QJ4xgWOSpSHWj0KQ/edit#gid=1860824155")
     }
     if(message.content === 'P!help') {
-    message.reply("Voici la liste des commandes /n P!sheet : affiche la liste des coordonnées du pala")
+    message.reply("Voici la liste des commandes 
+                  P!sheet : affiche la liste des coordonnées du pala")
     }
 });
        
